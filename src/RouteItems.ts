@@ -2,6 +2,7 @@ import Assemble from 'routes/Assemble';
 import Clean from 'routes/Clean';
 import Dashboard from 'routes/Dashboard';
 import Print from 'routes/Print';
+import NotFound from 'routes/NotFound';
 import Ship from 'routes/Ship';
 
 const RouteItems = [
@@ -22,19 +23,19 @@ const RouteItems = [
     title: 'Clean a Part',
     icon: '🧼',
     route: '/clean',
-    element: Clean,
+    element: NotFound,
   },
   {
     title: 'Assemble Parts',
     icon: '🛠',
     route: '/assemble',
-    element: Assemble,
+    element: NotFound,
   },
   {
     title: 'Print and Ship',
     icon: '📦',
     route: '/ship',
-    element: Ship,
+    element: NotFound,
   },
 ];
 

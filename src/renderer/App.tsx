@@ -15,7 +15,7 @@ export default function App() {
               index={r.index && true}
               key={r.route}
               path={r.route}
-              element={r.element()}
+              element={<r.element />}
             />
           ))}
         </Route>
