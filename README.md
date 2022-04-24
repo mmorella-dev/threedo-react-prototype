@@ -2,8 +2,6 @@
 
 A project for SWE 4324
 
-Repository based on <https://electron-react-boilerplate.js.org>
-
 ## Usage
 
 ### Install
@@ -28,4 +26,7 @@ npm start
 ## License
 
 MIT © [Electron React Boilerplate](https://github.com/electron-react-boilerplate)
+
 MIT © Mae Morella
+
+Repository based on <https://electron-react-boilerplate.js.org>
