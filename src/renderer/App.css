@@ -2,61 +2,60 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
+
+:root {
+  --background: #FFF;
+  --color-text: #444;
+  --color-heading: #111;
+  --color-light: #aaa;
+  --font-family: Roboto, sans-serif;
+  --color-primary-1: #00B0D8;
+  --color-primary-2: #AEDFE4;
+  --color-secondary: #EF4136;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   position: relative;
-  color: white;
+  color: #444;
   height: 100vh;
   background: linear-gradient(
     200.96deg,
-    #fedc2a -29.09%,
-    #dd5789 51.77%,
-    #7a2c9e 129.35%
+    #FFF,
+    #EEE
   );
-  font-family: sans-serif;
+  margin: 0;
+  font-family: var(--font-family);
   overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-button {
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  appearance: none;
-  font-size: 1.3rem;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
-    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-  transition: all ease-in 0.1s;
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-button:hover {
-  transform: scale(1.05);
-  opacity: 1;
 }
 
 li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  height: fit-content;
-  width: fit-content;
-  margin: 10px;
+
+h1, h2, h3, h4 {
+  color: var(--color-heading);
 }
 
-a:hover {
-  opacity: 1;
-  text-decoration: none;
+button {
+  background-color: var(--color-primary-2);
+  color: var(--color-heading);
+  border: 1px solid var(--color-primary-1);
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  border-radius: 0.5rem;
 }
 
-.Hello {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+button:active {
+  background-color: var(--color-primary-1);
+}
+
+select {
+  padding: 0.5rem;
+  font-size: inherit;
+  border-radius: 0.5rem;
 }

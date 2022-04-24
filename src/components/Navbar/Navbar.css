@@ -1,0 +1,41 @@
+.Navbar button {
+  display: block;
+  font-size: inherit;
+
+  background: none;
+  border: none;
+  border-bottom: solid 1px #aaa;
+  /*optional*/
+  font-family: var(--font-family) !important;
+  /*input has OS specific font-family*/
+  cursor: pointer;
+}
+
+.Navbar {
+  border-top: solid 1px #aaa;
+}
+
+.Navbar > * {
+  border-bottom: solid 1px #aaa;
+}
+
+.Navbar__item {
+  display: block;
+  color: var(--color-font);
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+.Navbar__item--active {
+  color: #000;
+  background: var(--color-primary-2);
+  border-bottom: 4px solid var(--color-primary-1);
+  font-weight: bold;
+}
+
+
+.Navbar__item:hover {
+  text-decoration: underline;
+}

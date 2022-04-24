@@ -1,0 +1,11 @@
+.ModelViewer {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  cursor: grab;
+  user-select: none;
+}
+
+.ModelViewer::before {
+  content: "ROTATE";
+
+}
