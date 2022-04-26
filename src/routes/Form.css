@@ -2,3 +2,8 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr
 }
+
+form > section > * {
+  display: block;
+  margin-bottom: 1rem;
+}
