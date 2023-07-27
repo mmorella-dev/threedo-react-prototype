@@ -14,7 +14,10 @@ const Layout = () => (
     <main id="main">
       <Outlet />
     </main>
-    <div id="bottomleft">Hello world!</div>
+    <div id="bottomleft">
+      <p>🟢 Robot status</p>
+      <p>🟢 Printer status</p>
+    </div>
     <div id="bottom">Progress</div>
   </>
 );
