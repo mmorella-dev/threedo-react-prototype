@@ -1,4 +1,4 @@
-# morellam-dev / ucd-prototype
+# threedo-react-prototype
 
 A UI mockup of "ThreeDo", a fictional robot control application, built in Electron and React.
 
